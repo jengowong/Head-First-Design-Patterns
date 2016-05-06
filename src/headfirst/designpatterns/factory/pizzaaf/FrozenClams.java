@@ -1,8 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+/**
+ * 具体类：冷冻蛤蜊
+ */
 public class FrozenClams implements Clams {
 
-	public String toString() {
-		return "Frozen Clams from Chesapeake Bay";
-	}
+    @Override
+    public String toString() {
+        return "Frozen Clams from Chesapeake Bay";
+    }
+
 }

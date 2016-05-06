@@ -1,7 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+/**
+ * 具体类：番茄大蒜调味汁
+ */
 public class MarinaraSauce implements Sauce {
-	public String toString() {
-		return "Marinara Sauce";
-	}
+
+    @Override
+    public String toString() {
+        return "Marinara Sauce";
+    }
+
 }

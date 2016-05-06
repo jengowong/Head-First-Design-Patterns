@@ -1,8 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+/**
+ * 具体类：黑橄榄
+ */
 public class BlackOlives implements Veggies {
 
-	public String toString() {
-		return "Black Olives";
-	}
+    @Override
+    public String toString() {
+        return "Black Olives";
+    }
+
 }
