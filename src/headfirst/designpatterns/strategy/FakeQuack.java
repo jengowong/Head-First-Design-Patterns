@@ -1,7 +1,13 @@
 package headfirst.designpatterns.strategy;
 
+/**
+ * 具体类：假鸭
+ */
 public class FakeQuack implements QuackBehavior {
-	public void quack() {
-		System.out.println("Qwak");
-	}
+
+    @Override
+    public void quack() {
+        System.out.println("Qwak");
+    }
+
 }

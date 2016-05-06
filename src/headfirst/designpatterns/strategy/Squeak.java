@@ -1,7 +1,13 @@
 package headfirst.designpatterns.strategy;
 
+/**
+ * 具体类：吱吱叫
+ */
 public class Squeak implements QuackBehavior {
-	public void quack() {
-		System.out.println("Squeak");
-	}
+
+    @Override
+    public void quack() {
+        System.out.println("Squeak");
+    }
+
 }

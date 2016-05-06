@@ -1,31 +1,39 @@
 package headfirst.designpatterns.strategy;
 
+/**
+ * 抽象类：鸭子
+ */
 public abstract class Duck {
-	FlyBehavior flyBehavior;
-	QuackBehavior quackBehavior;
 
-	public Duck() {
-	}
+    FlyBehavior flyBehavior;
+    QuackBehavior quackBehavior;
 
-	public void setFlyBehavior(FlyBehavior fb) {
-		flyBehavior = fb;
-	}
+    public Duck() {
+    }
 
-	public void setQuackBehavior(QuackBehavior qb) {
-		quackBehavior = qb;
-	}
+    public void setFlyBehavior(FlyBehavior fb) {
+        flyBehavior = fb;
+    }
 
-	abstract void display();
+    public void setQuackBehavior(QuackBehavior qb) {
+        quackBehavior = qb;
+    }
 
-	public void performFly() {
-		flyBehavior.fly();
-	}
+    /**
+     * 抽象方法：表演
+     */
+    abstract void display();
 
-	public void performQuack() {
-		quackBehavior.quack();
-	}
+    public void performFly() {
+        flyBehavior.fly();
+    }
 
-	public void swim() {
-		System.out.println("All ducks float, even decoys!");
-	}
+    public void performQuack() {
+        quackBehavior.quack();
+    }
+
+    public void swim() {
+        System.out.println("All ducks float, even decoys!");
+    }
+
 }

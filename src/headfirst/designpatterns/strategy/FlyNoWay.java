@@ -1,7 +1,13 @@
 package headfirst.designpatterns.strategy;
 
+/**
+ * 具体类：不会飞
+ */
 public class FlyNoWay implements FlyBehavior {
-	public void fly() {
-		System.out.println("I can't fly");
-	}
+
+    @Override
+    public void fly() {
+        System.out.println("I can't fly");
+    }
+
 }

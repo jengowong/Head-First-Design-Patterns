@@ -33,10 +33,10 @@ public class ImageProxyTestDrive {
 			String name = (String)e.nextElement();
 			JMenuItem menuItem = new JMenuItem(name);
 			menu.add(menuItem); 
-			menuItem.addActionListener(event -> {
-				imageComponent.setIcon(new ImageProxy(getCDUrl(event.getActionCommand())));
-				frame.repaint();
-			});
+			//menuItem.addActionListener(event -> {
+			//	imageComponent.setIcon(new ImageProxy(getCDUrl(event.getActionCommand())));
+			//	frame.repaint();
+			//});
 		}
 
 		// set up frame and menus

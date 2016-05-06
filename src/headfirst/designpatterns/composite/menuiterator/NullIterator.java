@@ -3,11 +3,18 @@ package headfirst.designpatterns.composite.menuiterator;
 import java.util.Iterator;
   
 public class NullIterator implements Iterator<MenuComponent> {
-   
+
+	@Override
 	public MenuComponent next() {
 		return null;
 	}
-  
+
+	@Override
+	public void remove() {
+
+	}
+
+	@Override
 	public boolean hasNext() {
 		return false;
 	}
@@ -22,4 +29,5 @@ public class NullIterator implements Iterator<MenuComponent> {
 		throw new UnsupportedOperationException();
 	}
 	*/
+
 }
