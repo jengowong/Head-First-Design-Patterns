@@ -1,19 +1,24 @@
 package headfirst.designpatterns.command.undo;
 
+/**
+ * 调光器
+ */
 public class DimmerLightOnCommand implements Command {
-	Light light;
-	int prevLevel;
 
-	public DimmerLightOnCommand(Light light) {
-		this.light = light;
-	}
+    Light light;
+    int prevLevel;
 
-	public void execute() {
-		prevLevel = light.getLevel();
-		light.dim(75);
-	}
+    public DimmerLightOnCommand(Light light) {
+        this.light = light;
+    }
 
-	public void undo() {
-		light.dim(prevLevel);
-	}
+    public void execute() {
+        prevLevel = light.getLevel();
+        light.dim(75);
+    }
+
+    public void undo() {
+        light.dim(prevLevel);
+    }
+
 }

@@ -1,5 +1,13 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+import headfirst.designpatterns.factory.pizzaaf.pizza.CheesePizza;
+import headfirst.designpatterns.factory.pizzaaf.pizza.ClamPizza;
+import headfirst.designpatterns.factory.pizzaaf.pizza.PepperoniPizza;
+import headfirst.designpatterns.factory.pizzaaf.pizza.Pizza;
+import headfirst.designpatterns.factory.pizzaaf.pizza.VeggiePizza;
+import headfirst.designpatterns.factory.pizzaaf.pizza.factory.ChicagoPizzaIngredientFactory;
+import headfirst.designpatterns.factory.pizzaaf.pizza.factory.PizzaIngredientFactory;
+
 /**
  * 具体类：芝加哥披萨店
  */

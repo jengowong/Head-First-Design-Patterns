@@ -1,5 +1,7 @@
 package headfirst.designpatterns.factory.pizzaaf;
 
+import headfirst.designpatterns.factory.pizzaaf.pizza.Pizza;
+
 /**
  * 抽象类：披萨店
  */
