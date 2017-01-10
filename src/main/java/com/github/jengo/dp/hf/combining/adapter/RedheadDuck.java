@@ -1,0 +1,7 @@
+package com.github.jengo.dp.hf.combining.adapter;
+
+public class RedheadDuck implements Quackable {
+    public void quack() {
+        System.out.println("Quack");
+    }
+}
