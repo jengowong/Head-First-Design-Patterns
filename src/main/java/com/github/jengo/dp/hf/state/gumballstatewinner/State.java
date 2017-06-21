@@ -1,14 +1,13 @@
 package com.github.jengo.dp.hf.state.gumballstatewinner;
 
 public interface State {
+    void insertQuarter();
 
-    public void insertQuarter();
+    void ejectQuarter();
 
-    public void ejectQuarter();
+    void turnCrank();
 
-    public void turnCrank();
+    void dispense();
 
-    public void dispense();
-
-    public void refill();
+    void refill();
 }

@@ -1,9 +1,11 @@
 package com.github.jengo.dp.hf.state.gumballstate;
 
-//import java.util.Random;
-
+/**
+ * 状态：有25美分
+ */
 public class HasQuarterState implements State {
-    GumballMachine gumballMachine;
+
+    private GumballMachine gumballMachine;
 
     public HasQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
@@ -33,4 +35,5 @@ public class HasQuarterState implements State {
     public String toString() {
         return "waiting for turn of crank";
     }
+
 }

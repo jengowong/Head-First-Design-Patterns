@@ -3,8 +3,9 @@ package com.github.jengo.dp.hf.state.gumballstatewinner;
 import java.util.Random;
 
 public class HasQuarterState implements State {
-    Random randomWinner = new Random(System.currentTimeMillis());
-    GumballMachine gumballMachine;
+
+    private GumballMachine gumballMachine;
+    private Random randomWinner = new Random(System.currentTimeMillis());
 
     public HasQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
@@ -39,4 +40,5 @@ public class HasQuarterState implements State {
     public String toString() {
         return "waiting for turn of crank";
     }
+
 }

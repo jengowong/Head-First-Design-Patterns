@@ -1,7 +1,8 @@
 package com.github.jengo.dp.hf.state.gumballstatewinner;
 
 public class SoldState implements State {
-    GumballMachine gumballMachine;
+
+    private GumballMachine gumballMachine;
 
     public SoldState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
@@ -35,4 +36,5 @@ public class SoldState implements State {
     public String toString() {
         return "dispensing a gumball";
     }
+
 }

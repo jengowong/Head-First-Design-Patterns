@@ -2,13 +2,13 @@ package com.github.jengo.dp.hf.state.gumballstate;
 
 public class GumballMachine {
 
-    State soldOutState;
-    State noQuarterState;
-    State hasQuarterState;
-    State soldState;
+    private State soldOutState;
+    private State noQuarterState;
+    private State hasQuarterState;
+    private State soldState;
 
-    State state;
-    int count = 0;
+    private State state;
+    private int count = 0;
 
     public GumballMachine(int numberGumballs) {
         soldOutState = new SoldOutState(this);
@@ -79,15 +79,16 @@ public class GumballMachine {
     }
 
     public String toString() {
-        StringBuffer result = new StringBuffer();
+        StringBuilder result = new StringBuilder();
         result.append("\nMighty Gumball, Inc.");
         result.append("\nJava-enabled Standing Gumball Model #2004");
-        result.append("\nInventory: " + count + " gumball");
+        result.append("\nInventory: ").append(count).append(" gumball");
         if (count != 1) {
             result.append("s");
         }
         result.append("\n");
-        result.append("Machine is " + state + "\n");
+        result.append("Machine is ").append(state).append("\n");
         return result.toString();
     }
+
 }

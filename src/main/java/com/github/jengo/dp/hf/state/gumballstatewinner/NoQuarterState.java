@@ -1,7 +1,8 @@
 package com.github.jengo.dp.hf.state.gumballstatewinner;
 
 public class NoQuarterState implements State {
-    GumballMachine gumballMachine;
+
+    private GumballMachine gumballMachine;
 
     public NoQuarterState(GumballMachine gumballMachine) {
         this.gumballMachine = gumballMachine;
@@ -30,4 +31,5 @@ public class NoQuarterState implements State {
     public String toString() {
         return "waiting for quarter";
     }
+
 }
