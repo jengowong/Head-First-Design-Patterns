@@ -24,4 +24,5 @@ public class Coffee {
     public void addSugarAndMilk() {
         System.out.println("Adding Sugar and Milk");
     }
+
 }

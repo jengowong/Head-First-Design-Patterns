@@ -6,23 +6,20 @@ import java.io.InputStreamReader;
 
 public class TeaWithHook extends CaffeineBeverageWithHook {
 
+    @Override
     public void brew() {
         System.out.println("Steeping the tea");
     }
 
+    @Override
     public void addCondiments() {
         System.out.println("Adding Lemon");
     }
 
+    @Override
     public boolean customerWantsCondiments() {
-
         String answer = getUserInput();
-
-        if (answer.toLowerCase().startsWith("y")) {
-            return true;
-        } else {
-            return false;
-        }
+        return answer.toLowerCase().startsWith("y");
     }
 
     private String getUserInput() {
@@ -42,4 +39,5 @@ public class TeaWithHook extends CaffeineBeverageWithHook {
         }
         return answer;
     }
+
 }

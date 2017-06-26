@@ -2,22 +2,23 @@ package com.github.jengo.dp.hf.templatemethod.barista;
 
 public abstract class CaffeineBeverage {
 
-    final void prepareRecipe() {
+    public final void prepareRecipe() {
         boilWater();
         brew();
         pourInCup();
         addCondiments();
     }
 
-    abstract void brew();
+    protected abstract void brew();
 
-    abstract void addCondiments();
+    protected abstract void addCondiments();
 
-    void boilWater() {
+    protected void boilWater() {
         System.out.println("Boiling water");
     }
 
-    void pourInCup() {
+    protected void pourInCup() {
         System.out.println("Pouring into cup");
     }
+
 }

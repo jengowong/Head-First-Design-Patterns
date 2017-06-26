@@ -1,7 +1,7 @@
 package com.github.jengo.dp.hf.templatemethod.frame;
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JFrame;
+import java.awt.Graphics;
 
 public class MyFrame extends JFrame {
     private static final long serialVersionUID = 2L;

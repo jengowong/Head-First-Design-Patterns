@@ -2,7 +2,7 @@ package com.github.jengo.dp.hf.templatemethod.barista;
 
 public abstract class CaffeineBeverageWithHook {
 
-    final void prepareRecipe() {
+    public final void prepareRecipe() {
         boilWater();
         brew();
         pourInCup();
@@ -11,19 +11,20 @@ public abstract class CaffeineBeverageWithHook {
         }
     }
 
-    abstract void brew();
+    protected abstract void brew();
 
-    abstract void addCondiments();
+    protected abstract void addCondiments();
 
-    void boilWater() {
+    protected void boilWater() {
         System.out.println("Boiling water");
     }
 
-    void pourInCup() {
+    protected void pourInCup() {
         System.out.println("Pouring into cup");
     }
 
-    boolean customerWantsCondiments() {
+    protected boolean customerWantsCondiments() {
         return true;
     }
+
 }

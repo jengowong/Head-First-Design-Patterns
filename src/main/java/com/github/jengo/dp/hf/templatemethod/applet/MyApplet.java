@@ -1,7 +1,7 @@
 package com.github.jengo.dp.hf.templatemethod.applet;
 
 import java.applet.Applet;
-import java.awt.*;
+import java.awt.Graphics;
 
 public class MyApplet extends Applet {
     private static final long serialVersionUID = 2L;
@@ -30,5 +30,6 @@ public class MyApplet extends Applet {
     public void paint(Graphics g) {
         g.drawString(message, 5, 15);
     }
+
 }
 
