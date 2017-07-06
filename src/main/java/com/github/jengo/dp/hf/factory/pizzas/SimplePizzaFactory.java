@@ -7,13 +7,13 @@ public class SimplePizzaFactory {
 
     public Pizza createPizza(String type) {
         Pizza pizza = null;
-        if (type.equals("cheese")) {
+        if ("cheese".equals(type)) {
             pizza = new CheesePizza();
-        } else if (type.equals("pepperoni")) {
+        } else if ("pepperoni".equals(type)) {
             pizza = new PepperoniPizza();
-        } else if (type.equals("clam")) {
+        } else if ("clam".equals(type)) {
             pizza = new ClamPizza();
-        } else if (type.equals("veggie")) {
+        } else if ("veggie".equals(type)) {
             pizza = new VeggiePizza();
         }
         return pizza;

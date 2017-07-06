@@ -3,11 +3,11 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 public class NYStyleCheesePizza extends Pizza {
 
     public NYStyleCheesePizza() {
-        name = "NY Style Sauce and Cheese Pizza";
-        dough = "Thin Crust Dough";
-        sauce = "Marinara Sauce";
+        this.name = "NY Style Sauce and Cheese Pizza";
+        this.dough = "Thin Crust Dough";
+        this.sauce = "Marinara Sauce";
 
-        toppings.add("Grated Reggiano Cheese");
+        this.toppings.add("Grated Reggiano Cheese");
     }
 
 }

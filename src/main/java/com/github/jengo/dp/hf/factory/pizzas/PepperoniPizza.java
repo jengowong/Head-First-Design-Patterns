@@ -6,12 +6,12 @@ package com.github.jengo.dp.hf.factory.pizzas;
 public class PepperoniPizza extends Pizza {
 
     public PepperoniPizza() {
-        name = "Pepperoni Pizza";
-        dough = "Crust";
-        sauce = "Marinara sauce";
-        toppings.add("Sliced Pepperoni");
-        toppings.add("Sliced Onion");
-        toppings.add("Grated parmesan cheese");
+        this.name = "Pepperoni Pizza";
+        this.dough = "Crust";
+        this.sauce = "Marinara sauce";
+        this.toppings.add("Sliced Pepperoni");
+        this.toppings.add("Sliced Onion");
+        this.toppings.add("Grated parmesan cheese");
     }
 
 }

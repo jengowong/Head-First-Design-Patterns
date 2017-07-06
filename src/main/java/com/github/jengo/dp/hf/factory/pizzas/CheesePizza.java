@@ -6,11 +6,11 @@ package com.github.jengo.dp.hf.factory.pizzas;
 public class CheesePizza extends Pizza {
 
     public CheesePizza() {
-        name = "Cheese Pizza";
-        dough = "Regular Crust"; //常规
-        sauce = "Marinara Pizza Sauce"; //杂菜
-        toppings.add("Fresh Mozzarella"); //马苏里拉奶酪
-        toppings.add("Parmesan"); //帕尔马干酪
+        this.name = "Cheese Pizza";             //芝士披萨
+        this.dough = "Regular Crust";           //常规面包皮
+        this.sauce = "Marinara Pizza Sauce";    //杂菜
+        this.toppings.add("Fresh Mozzarella");  //马苏里拉奶酪
+        this.toppings.add("Parmesan");          //帕尔马干酪
     }
 
 }

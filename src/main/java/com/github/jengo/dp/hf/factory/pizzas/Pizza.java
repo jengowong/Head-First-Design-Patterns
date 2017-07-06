@@ -5,16 +5,15 @@ import java.util.ArrayList;
 /**
  * 抽象类：披萨
  */
-abstract public class Pizza {
-
+public abstract class Pizza {
     /** 名称 */
-    String name;
+    protected String name;
     /** 生面团 */
-    String dough;
+    protected String dough;
     /** 调味汁 */
-    String sauce;
+    protected String sauce;
     /** 馅料 */
-    ArrayList<String> toppings = new ArrayList<String>();
+    protected ArrayList<String> toppings = new ArrayList<String>();
 
     public String getName() {
         return name;
@@ -38,12 +37,12 @@ abstract public class Pizza {
 
     public String toString() {
         // code to display pizza name and ingredients
-        StringBuffer display = new StringBuffer();
-        display.append("---- " + name + " ----\n");
-        display.append(dough + "\n");
-        display.append(sauce + "\n");
+        StringBuilder display = new StringBuilder();
+        display.append("---- ").append(name).append(" ----\n");
+        display.append(dough).append("\n");
+        display.append(sauce).append("\n");
         for (String topping : toppings) {
-            display.append(topping + "\n");
+            display.append(topping).append("\n");
         }
         return display.toString();
     }

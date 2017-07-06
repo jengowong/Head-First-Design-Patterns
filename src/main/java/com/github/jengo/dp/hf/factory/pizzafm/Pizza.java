@@ -1,16 +1,17 @@
 package com.github.jengo.dp.hf.factory.pizzafm;
 
 import java.util.ArrayList;
+import java.util.List;
 
 /**
  * 抽象类：披萨
  */
 public abstract class Pizza {
 
-    String name;
-    String dough;
-    String sauce;
-    ArrayList<String> toppings = new ArrayList<String>();
+    protected String name;
+    protected String dough;
+    protected String sauce;
+    protected List<String> toppings = new ArrayList<>();
 
     void prepare() {
         System.out.println("Prepare " + name);
@@ -39,12 +40,12 @@ public abstract class Pizza {
     }
 
     public String toString() {
-        StringBuffer display = new StringBuffer();
-        display.append("---- " + name + " ----\n");
-        display.append(dough + "\n");
-        display.append(sauce + "\n");
+        StringBuilder display = new StringBuilder();
+        display.append("---- ").append(name).append(" ----\n");
+        display.append(dough).append("\n");
+        display.append(sauce).append("\n");
         for (String topping : toppings) {
-            display.append(topping + "\n");
+            display.append(topping).append("\n");
         }
         return display.toString();
     }

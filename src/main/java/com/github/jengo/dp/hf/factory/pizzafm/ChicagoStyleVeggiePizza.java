@@ -3,14 +3,14 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 public class ChicagoStyleVeggiePizza extends Pizza {
 
     public ChicagoStyleVeggiePizza() {
-        name = "Chicago Deep Dish Veggie Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+        this.name = "Chicago Deep Dish Veggie Pizza";
+        this.dough = "Extra Thick Crust Dough";
+        this.sauce = "Plum Tomato Sauce";
 
-        toppings.add("Shredded Mozzarella Cheese");
-        toppings.add("Black Olives");
-        toppings.add("Spinach");
-        toppings.add("Eggplant");
+        this.toppings.add("Shredded Mozzarella Cheese");
+        this.toppings.add("Black Olives");
+        this.toppings.add("Spinach");
+        this.toppings.add("Eggplant");
     }
 
     @Override

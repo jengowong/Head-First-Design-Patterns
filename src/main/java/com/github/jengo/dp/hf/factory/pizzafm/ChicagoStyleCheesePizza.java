@@ -6,11 +6,11 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 public class ChicagoStyleCheesePizza extends Pizza {
 
     public ChicagoStyleCheesePizza() {
-        name = "Chicago Style Deep Dish Cheese Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+        this.name = "Chicago Style Deep Dish Cheese Pizza";
+        this.dough = "Extra Thick Crust Dough";
+        this.sauce = "Plum Tomato Sauce";
 
-        toppings.add("Shredded Mozzarella Cheese");
+        this.toppings.add("Shredded Mozzarella Cheese");
     }
 
     @Override

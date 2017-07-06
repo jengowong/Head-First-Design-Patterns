@@ -6,7 +6,7 @@ import com.github.jengo.dp.hf.factory.pizzaaf.pizza.factory.PizzaIngredientFacto
  * 具体类：蛤蜊披萨
  */
 public class ClamPizza extends Pizza {
-    PizzaIngredientFactory ingredientFactory;
+    private PizzaIngredientFactory ingredientFactory;
 
     public ClamPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;

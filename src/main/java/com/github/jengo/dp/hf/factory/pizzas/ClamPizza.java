@@ -6,11 +6,11 @@ package com.github.jengo.dp.hf.factory.pizzas;
 public class ClamPizza extends Pizza {
 
     public ClamPizza() {
-        name = "Clam Pizza";
-        dough = "Thin crust"; //薄皮
-        sauce = "White garlic sauce"; //白蒜
-        toppings.add("Clams"); //蛤蜊
-        toppings.add("Grated parmesan cheese"); //
+        this.name = "Clam Pizza";
+        this.dough = "Thin crust";                   //薄皮
+        this.sauce = "White garlic sauce";           //白蒜
+        this.toppings.add("Clams");                  //蛤蜊
+        this.toppings.add("Grated parmesan cheese"); //
     }
 
 }

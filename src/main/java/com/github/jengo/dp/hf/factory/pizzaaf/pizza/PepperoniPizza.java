@@ -6,7 +6,7 @@ import com.github.jengo.dp.hf.factory.pizzaaf.pizza.factory.PizzaIngredientFacto
  * 具体类：香肠披萨
  */
 public class PepperoniPizza extends Pizza {
-    PizzaIngredientFactory ingredientFactory;
+    private PizzaIngredientFactory ingredientFactory;
 
     public PepperoniPizza(PizzaIngredientFactory ingredientFactory) {
         this.ingredientFactory = ingredientFactory;

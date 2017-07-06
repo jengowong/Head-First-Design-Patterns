@@ -2,12 +2,12 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 
 public class ChicagoStyleClamPizza extends Pizza {
     public ChicagoStyleClamPizza() {
-        name = "Chicago Style Clam Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+        this.name = "Chicago Style Clam Pizza";
+        this.dough = "Extra Thick Crust Dough";
+        this.sauce = "Plum Tomato Sauce";
 
-        toppings.add("Shredded Mozzarella Cheese");
-        toppings.add("Frozen Clams from Chesapeake Bay");
+        this.toppings.add("Shredded Mozzarella Cheese");
+        this.toppings.add("Frozen Clams from Chesapeake Bay");
     }
 
     void cut() {

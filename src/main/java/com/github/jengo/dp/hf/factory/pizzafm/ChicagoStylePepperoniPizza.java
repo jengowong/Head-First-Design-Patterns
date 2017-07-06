@@ -3,15 +3,15 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 public class ChicagoStylePepperoniPizza extends Pizza {
 
     public ChicagoStylePepperoniPizza() {
-        name = "Chicago Style Pepperoni Pizza";
-        dough = "Extra Thick Crust Dough";
-        sauce = "Plum Tomato Sauce";
+        this.name = "Chicago Style Pepperoni Pizza";
+        this.dough = "Extra Thick Crust Dough";
+        this.sauce = "Plum Tomato Sauce";
 
-        toppings.add("Shredded Mozzarella Cheese");
-        toppings.add("Black Olives");
-        toppings.add("Spinach");
-        toppings.add("Eggplant");
-        toppings.add("Sliced Pepperoni");
+        this.toppings.add("Shredded Mozzarella Cheese");
+        this.toppings.add("Black Olives");
+        this.toppings.add("Spinach");
+        this.toppings.add("Eggplant");
+        this.toppings.add("Sliced Pepperoni");
     }
 
     @Override

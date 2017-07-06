@@ -3,16 +3,16 @@ package com.github.jengo.dp.hf.factory.pizzafm;
 public class NYStylePepperoniPizza extends Pizza {
 
     public NYStylePepperoniPizza() {
-        name = "NY Style Pepperoni Pizza";
-        dough = "Thin Crust Dough";
-        sauce = "Marinara Sauce";
+        this.name = "NY Style Pepperoni Pizza";
+        this.dough = "Thin Crust Dough";
+        this.sauce = "Marinara Sauce";
 
-        toppings.add("Grated Reggiano Cheese");
-        toppings.add("Sliced Pepperoni");
-        toppings.add("Garlic");
-        toppings.add("Onion");
-        toppings.add("Mushrooms");
-        toppings.add("Red Pepper");
+        this.toppings.add("Grated Reggiano Cheese");
+        this.toppings.add("Sliced Pepperoni");
+        this.toppings.add("Garlic");
+        this.toppings.add("Onion");
+        this.toppings.add("Mushrooms");
+        this.toppings.add("Red Pepper");
     }
 
 }
