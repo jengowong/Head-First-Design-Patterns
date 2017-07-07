@@ -1,12 +1,12 @@
 package com.github.jengo.dp.hf.factory.pizzaaf;
 
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.ChicagoPizzaIngredientFactory;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.PizzaIngredientFactory;
 import com.github.jengo.dp.hf.factory.pizzaaf.pizza.CheesePizza;
 import com.github.jengo.dp.hf.factory.pizzaaf.pizza.ClamPizza;
 import com.github.jengo.dp.hf.factory.pizzaaf.pizza.PepperoniPizza;
 import com.github.jengo.dp.hf.factory.pizzaaf.pizza.Pizza;
 import com.github.jengo.dp.hf.factory.pizzaaf.pizza.VeggiePizza;
-import com.github.jengo.dp.hf.factory.pizzaaf.pizza.factory.ChicagoPizzaIngredientFactory;
-import com.github.jengo.dp.hf.factory.pizzaaf.pizza.factory.PizzaIngredientFactory;
 
 /**
  * 具体类：芝加哥披萨店

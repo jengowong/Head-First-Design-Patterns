@@ -1,11 +1,11 @@
 package com.github.jengo.dp.hf.factory.pizzaaf.pizza;
 
-import com.github.jengo.dp.hf.factory.pizzaaf.cheese.Cheese;
-import com.github.jengo.dp.hf.factory.pizzaaf.clams.Clams;
-import com.github.jengo.dp.hf.factory.pizzaaf.daugh.Dough;
-import com.github.jengo.dp.hf.factory.pizzaaf.pepperoni.Pepperoni;
-import com.github.jengo.dp.hf.factory.pizzaaf.sauce.Sauce;
-import com.github.jengo.dp.hf.factory.pizzaaf.veggies.Veggies;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.cheese.Cheese;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.clams.Clams;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.daugh.Dough;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.pepperoni.Pepperoni;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.sauce.Sauce;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.veggies.Veggies;
 
 /**
  * 抽象类：披萨

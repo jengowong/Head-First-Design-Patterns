@@ -1,6 +1,6 @@
 package com.github.jengo.dp.hf.factory.pizzaaf.pizza;
 
-import com.github.jengo.dp.hf.factory.pizzaaf.pizza.factory.PizzaIngredientFactory;
+import com.github.jengo.dp.hf.factory.pizzaaf.ingredient.PizzaIngredientFactory;
 
 /**
  * 具体类：蛤蜊披萨
