@@ -15,11 +15,11 @@ public class PepperoniPizza extends Pizza {
     @Override
     public void prepare() {
         System.out.println("Preparing " + name);
-        dough = ingredientFactory.createDough();
-        sauce = ingredientFactory.createSauce();
-        cheese = ingredientFactory.createCheese();
-        veggies = ingredientFactory.createVeggies();
-        pepperoni = ingredientFactory.createPepperoni();
+        this.dough = ingredientFactory.createDough();
+        this.sauce = ingredientFactory.createSauce();
+        this.cheese = ingredientFactory.createCheese();
+        this.veggies = ingredientFactory.createVeggies();
+        this.pepperoni = ingredientFactory.createPepperoni();
     }
 
 }

@@ -53,34 +53,34 @@ public abstract class Pizza {
 
     public String toString() {
         StringBuilder result = new StringBuilder();
-        result.append("---- ").append(name).append(" ----\n");
-        if (dough != null) {
-            result.append(dough);
+        result.append("---- ").append(this.name).append(" ----\n");
+        if (this.dough != null) {
+            result.append(this.dough);
             result.append("\n");
         }
-        if (sauce != null) {
-            result.append(sauce);
+        if (this.sauce != null) {
+            result.append(this.sauce);
             result.append("\n");
         }
-        if (cheese != null) {
-            result.append(cheese);
+        if (this.cheese != null) {
+            result.append(this.cheese);
             result.append("\n");
         }
-        if (veggies != null) {
-            for (int i = 0; i < veggies.length; i++) {
-                result.append(veggies[i]);
-                if (i < veggies.length - 1) {
+        if (this.veggies != null) {
+            for (int i = 0; i < this.veggies.length; i++) {
+                result.append(this.veggies[i]);
+                if (i < this.veggies.length - 1) {
                     result.append(", ");
                 }
             }
             result.append("\n");
         }
-        if (clam != null) {
-            result.append(clam);
+        if (this.clam != null) {
+            result.append(this.clam);
             result.append("\n");
         }
-        if (pepperoni != null) {
-            result.append(pepperoni);
+        if (this.pepperoni != null) {
+            result.append(this.pepperoni);
             result.append("\n");
         }
         return result.toString();
