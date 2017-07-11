@@ -1,7 +1,7 @@
 package com.github.jengo.dp.hf.ducks;
 
 public class TurkeyAdapter implements Duck {
-    Turkey turkey;
+    private Turkey turkey;
 
     public TurkeyAdapter(Turkey turkey) {
         this.turkey = turkey;
@@ -16,4 +16,5 @@ public class TurkeyAdapter implements Duck {
             turkey.fly();
         }
     }
+
 }

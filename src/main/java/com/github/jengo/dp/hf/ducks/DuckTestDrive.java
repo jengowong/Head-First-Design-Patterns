@@ -1,6 +1,7 @@
 package com.github.jengo.dp.hf.ducks;
 
 public class DuckTestDrive {
+
     public static void main(String[] args) {
         MallardDuck duck = new MallardDuck();
 
@@ -22,4 +23,5 @@ public class DuckTestDrive {
         duck.quack();
         duck.fly();
     }
+
 }

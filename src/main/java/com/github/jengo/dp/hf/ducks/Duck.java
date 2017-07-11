@@ -1,7 +1,10 @@
 package com.github.jengo.dp.hf.ducks;
 
+/**
+ * 鸭子
+ */
 public interface Duck {
-    public void quack();
+    void quack();
 
-    public void fly();
+    void fly();
 }

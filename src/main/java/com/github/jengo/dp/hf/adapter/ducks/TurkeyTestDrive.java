@@ -1,6 +1,7 @@
 package com.github.jengo.dp.hf.adapter.ducks;
 
 public class TurkeyTestDrive {
+
     public static void main(String[] args) {
         MallardDuck duck = new MallardDuck();
         Turkey duckAdapter = new DuckAdapter(duck);
@@ -11,4 +12,5 @@ public class TurkeyTestDrive {
             duckAdapter.fly();
         }
     }
+
 }

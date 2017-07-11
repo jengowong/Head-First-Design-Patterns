@@ -3,12 +3,12 @@ package com.github.jengo.dp.hf.adapter.ducks;
 import java.util.Random;
 
 public class DuckAdapter implements Turkey {
-    Duck duck;
-    Random rand;
+    private Duck duck;
+    private Random rand;
 
     public DuckAdapter(Duck duck) {
         this.duck = duck;
-        rand = new Random();
+        this.rand = new Random();
     }
 
     public void gobble() {
@@ -20,4 +20,5 @@ public class DuckAdapter implements Turkey {
             duck.fly();
         }
     }
+
 }
