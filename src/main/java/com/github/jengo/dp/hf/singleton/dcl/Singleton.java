@@ -1,9 +1,8 @@
 package com.github.jengo.dp.hf.singleton.dcl;
 
-//
-// Danger!  This implementation of Singleton not
-// guaranteed to work prior to Java 5
-//
+/**
+ * Danger!  This implementation of Singleton not guaranteed to work prior to Java 5
+ */
 public class Singleton {
 
     private volatile static Singleton uniqueInstance;
@@ -12,9 +11,9 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (uniqueInstance == null) {
+        if (null == uniqueInstance) {
             synchronized (Singleton.class) {
-                if (uniqueInstance == null) {
+                if (null == uniqueInstance) {
                     uniqueInstance = new Singleton();
                 }
             }

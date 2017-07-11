@@ -2,9 +2,9 @@ package com.github.jengo.dp.hf.singleton.chocolate;
 
 public class ChocolateBoiler {
 
+    private static ChocolateBoiler uniqueInstance;
     private boolean empty;
     private boolean boiled;
-    private static ChocolateBoiler uniqueInstance;
 
     private ChocolateBoiler() {
         empty = true;
@@ -12,7 +12,7 @@ public class ChocolateBoiler {
     }
 
     public static ChocolateBoiler getInstance() {
-        if (uniqueInstance == null) {
+        if (null == uniqueInstance) {
             System.out.println("Creating unique instance of Chocolate Boiler");
             uniqueInstance = new ChocolateBoiler();
         }

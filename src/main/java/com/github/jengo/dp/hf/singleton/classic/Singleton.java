@@ -1,6 +1,8 @@
 package com.github.jengo.dp.hf.singleton.classic;
 
-// NOTE: This is not thread safe!
+/**
+ * NOTE: This is not thread safe!
+ */
 public class Singleton {
 
     private static Singleton uniqueInstance;
@@ -9,7 +11,7 @@ public class Singleton {
     }
 
     public static Singleton getInstance() {
-        if (uniqueInstance == null) {
+        if (null == uniqueInstance) {
             uniqueInstance = new Singleton();
         }
         return uniqueInstance;
