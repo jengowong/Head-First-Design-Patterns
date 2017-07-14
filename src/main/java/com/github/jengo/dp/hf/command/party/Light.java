@@ -1,20 +1,23 @@
 package com.github.jengo.dp.hf.command.party;
 
+/**
+ * 灯
+ */
 public class Light {
-    String location;
-    int level;
+    private String location;
+    private int level;
 
     public Light(String location) {
         this.location = location;
     }
 
     public void on() {
-        level = 100;
+        this.level = 100;
         System.out.println("Light is on");
     }
 
     public void off() {
-        level = 0;
+        this.level = 0;
         System.out.println("Light is off");
     }
 
@@ -28,6 +31,7 @@ public class Light {
     }
 
     public int getLevel() {
-        return level;
+        return this.level;
     }
+
 }

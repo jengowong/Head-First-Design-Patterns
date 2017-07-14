@@ -1,18 +1,19 @@
 package com.github.jengo.dp.hf.command.party;
 
 public class TVOnCommand implements Command {
-    TV tv;
+    private TV tv;
 
     public TVOnCommand(TV tv) {
         this.tv = tv;
     }
 
     public void execute() {
-        tv.on();
-        tv.setInputChannel();
+        this.tv.on();
+        this.tv.setInputChannel();
     }
 
     public void undo() {
-        tv.off();
+        this.tv.off();
     }
+
 }

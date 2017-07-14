@@ -1,13 +1,15 @@
 package com.github.jengo.dp.hf.command.simpleremote;
 
 public class LightOnCommand implements Command {
-    Light light;
+    private Light light;
 
     public LightOnCommand(Light light) {
         this.light = light;
     }
 
+    @Override
     public void execute() {
-        light.on();
+        this.light.on();
     }
+
 }

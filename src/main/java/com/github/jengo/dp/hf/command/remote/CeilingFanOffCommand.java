@@ -1,13 +1,15 @@
 package com.github.jengo.dp.hf.command.remote;
 
 public class CeilingFanOffCommand implements Command {
-    CeilingFan ceilingFan;
+    private CeilingFan ceilingFan;
 
     public CeilingFanOffCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
+    @Override
     public void execute() {
-        ceilingFan.off();
+        this.ceilingFan.off();
     }
+
 }

@@ -1,17 +1,18 @@
 package com.github.jengo.dp.hf.command.party;
 
 public class LightOffCommand implements Command {
-    Light light;
+    private Light light;
 
     public LightOffCommand(Light light) {
         this.light = light;
     }
 
     public void execute() {
-        light.off();
+        this.light.off();
     }
 
     public void undo() {
-        light.on();
+        this.light.on();
     }
+
 }

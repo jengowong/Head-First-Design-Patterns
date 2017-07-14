@@ -1,32 +1,35 @@
 package com.github.jengo.dp.hf.command.party;
 
 public class CeilingFanOffCommand implements Command {
-    CeilingFan ceilingFan;
-    int prevSpeed;
+    private CeilingFan ceilingFan;
+    private int prevSpeed;
 
     public CeilingFanOffCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
+    @Override
     public void execute() {
-        prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.off();
+        this.prevSpeed = this.ceilingFan.getSpeed();
+        this.ceilingFan.off();
     }
 
+    @Override
     public void undo() {
-        switch (prevSpeed) {
+        switch (this.prevSpeed) {
             case CeilingFan.HIGH:
-                ceilingFan.high();
+                this.ceilingFan.high();
                 break;
             case CeilingFan.MEDIUM:
-                ceilingFan.medium();
+                this.ceilingFan.medium();
                 break;
             case CeilingFan.LOW:
-                ceilingFan.low();
+                this.ceilingFan.low();
                 break;
             default:
-                ceilingFan.off();
+                this.ceilingFan.off();
                 break;
         }
     }
+
 }

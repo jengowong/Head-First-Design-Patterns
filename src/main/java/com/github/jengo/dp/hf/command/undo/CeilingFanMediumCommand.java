@@ -1,27 +1,29 @@
 package com.github.jengo.dp.hf.command.undo;
 
 public class CeilingFanMediumCommand implements Command {
-    CeilingFan ceilingFan;
-    int prevSpeed;
+
+    private CeilingFan ceilingFan;
+    private int prevSpeed;
 
     public CeilingFanMediumCommand(CeilingFan ceilingFan) {
         this.ceilingFan = ceilingFan;
     }
 
     public void execute() {
-        prevSpeed = ceilingFan.getSpeed();
-        ceilingFan.medium();
+        this.prevSpeed = this.ceilingFan.getSpeed();
+        this.ceilingFan.medium();
     }
 
     public void undo() {
-        if (prevSpeed == CeilingFan.HIGH) {
-            ceilingFan.high();
-        } else if (prevSpeed == CeilingFan.MEDIUM) {
-            ceilingFan.medium();
-        } else if (prevSpeed == CeilingFan.LOW) {
-            ceilingFan.low();
-        } else if (prevSpeed == CeilingFan.OFF) {
-            ceilingFan.off();
+        if (this.prevSpeed == CeilingFan.HIGH) {
+            this.ceilingFan.high();
+        } else if (this.prevSpeed == CeilingFan.MEDIUM) {
+            this.ceilingFan.medium();
+        } else if (this.prevSpeed == CeilingFan.LOW) {
+            this.ceilingFan.low();
+        } else if (this.prevSpeed == CeilingFan.OFF) {
+            this.ceilingFan.off();
         }
     }
+
 }

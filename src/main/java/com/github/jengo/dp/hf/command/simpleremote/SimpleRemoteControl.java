@@ -4,16 +4,17 @@ package com.github.jengo.dp.hf.command.simpleremote;
 // This is the invoker
 //
 public class SimpleRemoteControl {
-    Command slot;
+    private Command slot;
 
     public SimpleRemoteControl() {
     }
 
     public void setCommand(Command command) {
-        slot = command;
+        this.slot = command;
     }
 
     public void buttonWasPressed() {
-        slot.execute();
+        this.slot.execute();
     }
+
 }

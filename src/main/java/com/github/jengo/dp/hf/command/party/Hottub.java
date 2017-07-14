@@ -1,34 +1,37 @@
 package com.github.jengo.dp.hf.command.party;
 
+/**
+ * 热水浴缸
+ */
 public class Hottub {
-    boolean on;
-    int temperature;
+    private boolean on;
+    private int temperature;
 
     public Hottub() {
     }
 
     public void on() {
-        on = true;
+        this.on = true;
     }
 
     public void off() {
-        on = false;
+        this.on = false;
     }
 
     public void circulate() {
-        if (on) {
+        if (this.on) {
             System.out.println("Hottub is bubbling!");
         }
     }
 
     public void jetsOn() {
-        if (on) {
+        if (this.on) {
             System.out.println("Hottub jets are on");
         }
     }
 
     public void jetsOff() {
-        if (on) {
+        if (this.on) {
             System.out.println("Hottub jets are off");
         }
     }
@@ -41,4 +44,5 @@ public class Hottub {
         }
         this.temperature = temperature;
     }
+
 }

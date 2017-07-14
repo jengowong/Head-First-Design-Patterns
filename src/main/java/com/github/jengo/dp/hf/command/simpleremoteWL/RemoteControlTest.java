@@ -1,10 +1,12 @@
 package com.github.jengo.dp.hf.command.simpleremoteWL;
 
 public class RemoteControlTest {
+
     public static void main(String[] args) {
-        SimpleRemoteControl remote = new SimpleRemoteControl();
         Light light = new Light();
         GarageDoor garageDoor = new GarageDoor();
+
+        SimpleRemoteControl remote = new SimpleRemoteControl();
         //remote.setCommand(light::on);
         remote.buttonWasPressed();
         //remote.setCommand(garageDoor::up);

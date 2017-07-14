@@ -1,13 +1,15 @@
 package com.github.jengo.dp.hf.command.remote;
 
 public class LivingroomLightOffCommand implements Command {
-    Light light;
+    private Light light;
 
     public LivingroomLightOffCommand(Light light) {
         this.light = light;
     }
 
+    @Override
     public void execute() {
-        light.off();
+        this.light.off();
     }
+
 }

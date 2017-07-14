@@ -1,15 +1,17 @@
 package com.github.jengo.dp.hf.command.remote;
 
 public class HottubOnCommand implements Command {
-    Hottub hottub;
+    private Hottub hottub;
 
     public HottubOnCommand(Hottub hottub) {
         this.hottub = hottub;
     }
 
+    @Override
     public void execute() {
-        hottub.on();
-        hottub.heat();
-        hottub.bubblesOn();
+        this.hottub.on();
+        this.hottub.heat();
+        this.hottub.bubblesOn();
     }
+
 }

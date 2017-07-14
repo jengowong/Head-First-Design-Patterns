@@ -1,13 +1,15 @@
 package com.github.jengo.dp.hf.command.remote;
 
 public class StereoOffCommand implements Command {
-    Stereo stereo;
+    private Stereo stereo;
 
     public StereoOffCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
+    @Override
     public void execute() {
-        stereo.off();
+        this.stereo.off();
     }
+
 }

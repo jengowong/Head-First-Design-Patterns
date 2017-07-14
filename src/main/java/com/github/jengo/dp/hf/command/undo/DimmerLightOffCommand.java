@@ -1,20 +1,22 @@
 package com.github.jengo.dp.hf.command.undo;
 
 public class DimmerLightOffCommand implements Command {
-    Light light;
-    int prevLevel;
+
+    private Light light;
+    private int prevLevel;
 
     public DimmerLightOffCommand(Light light) {
         this.light = light;
-        prevLevel = 100;
+        this.prevLevel = 100;
     }
 
     public void execute() {
-        prevLevel = light.getLevel();
-        light.off();
+        this.prevLevel = this.light.getLevel();
+        this.light.off();
     }
 
     public void undo() {
-        light.dim(prevLevel);
+        this.light.dim(this.prevLevel);
     }
+
 }

@@ -3,30 +3,28 @@ package com.github.jengo.dp.hf.command.party;
 public class RemoteLoader {
 
     public static void main(String[] args) {
-
-        RemoteControl remoteControl = new RemoteControl();
-
         Light light = new Light("Living Room");
-        TV tv = new TV("Living Room");
         Stereo stereo = new Stereo("Living Room");
+        TV tv = new TV("Living Room");
         Hottub hottub = new Hottub();
 
-        LightOnCommand lightOn = new LightOnCommand(light);
-        StereoOnCommand stereoOn = new StereoOnCommand(stereo);
-        TVOnCommand tvOn = new TVOnCommand(tv);
-        HottubOnCommand hottubOn = new HottubOnCommand(hottub);
-        LightOffCommand lightOff = new LightOffCommand(light);
-        StereoOffCommand stereoOff = new StereoOffCommand(stereo);
-        TVOffCommand tvOff = new TVOffCommand(tv);
-        HottubOffCommand hottubOff = new HottubOffCommand(hottub);
+        LightOnCommand lightOnCmd = new LightOnCommand(light);
+        LightOffCommand lightOffCmd = new LightOffCommand(light);
+        StereoOnCommand stereoOnCmd = new StereoOnCommand(stereo);
+        StereoOffCommand stereoOffCmd = new StereoOffCommand(stereo);
+        TVOnCommand tvOnCmd = new TVOnCommand(tv);
+        TVOffCommand tvOffCmd = new TVOffCommand(tv);
+        HottubOnCommand hottubOnCmd = new HottubOnCommand(hottub);
+        HottubOffCommand hottubOffCmd = new HottubOffCommand(hottub);
 
-        Command[] partyOn = {lightOn, stereoOn, tvOn, hottubOn};
-        Command[] partyOff = {lightOff, stereoOff, tvOff, hottubOff};
+        Command[] partyOnCmds = {lightOnCmd, stereoOnCmd, tvOnCmd, hottubOnCmd};
+        Command[] partyOffCmds = {lightOffCmd, stereoOffCmd, tvOffCmd, hottubOffCmd};
 
-        MacroCommand partyOnMacro = new MacroCommand(partyOn);
-        MacroCommand partyOffMacro = new MacroCommand(partyOff);
+        MacroCommand partyOnMacroCmd = new MacroCommand(partyOnCmds);
+        MacroCommand partyOffMacroCmd = new MacroCommand(partyOffCmds);
 
-        remoteControl.setCommand(0, partyOnMacro, partyOffMacro);
+        RemoteControl remoteControl = new RemoteControl();
+        remoteControl.setCommand(0, partyOnMacroCmd, partyOffMacroCmd);
 
         System.out.println(remoteControl);
         System.out.println("--- Pushing Macro On---");
@@ -34,4 +32,5 @@ public class RemoteLoader {
         System.out.println("--- Pushing Macro Off---");
         remoteControl.offButtonWasPushed(0);
     }
+
 }

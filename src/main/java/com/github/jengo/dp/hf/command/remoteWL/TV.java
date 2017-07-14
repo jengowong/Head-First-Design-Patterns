@@ -1,8 +1,8 @@
 package com.github.jengo.dp.hf.command.remoteWL;
 
 public class TV {
-    String location;
-    int channel;
+    private String location;
+    private int channel;
 
     public TV(String location) {
         this.location = location;
@@ -20,4 +20,5 @@ public class TV {
         this.channel = 3;
         System.out.println("Channel is set for VCR");
     }
+
 }

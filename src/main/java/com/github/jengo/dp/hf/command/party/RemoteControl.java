@@ -4,35 +4,35 @@ package com.github.jengo.dp.hf.command.party;
 // This is the invoker
 //
 public class RemoteControl {
-    Command[] onCommands;
-    Command[] offCommands;
-    Command undoCommand;
+    private Command[] onCommands;
+    private Command[] offCommands;
+    private Command undoCommand;
 
     public RemoteControl() {
-        onCommands = new Command[7];
-        offCommands = new Command[7];
+        this.onCommands = new Command[7];
+        this.offCommands = new Command[7];
 
         Command noCommand = new NoCommand();
         for (int i = 0; i < 7; i++) {
-            onCommands[i] = noCommand;
-            offCommands[i] = noCommand;
+            this.onCommands[i] = noCommand;
+            this.offCommands[i] = noCommand;
         }
-        undoCommand = noCommand;
+        this.undoCommand = noCommand;
     }
 
     public void setCommand(int slot, Command onCommand, Command offCommand) {
-        onCommands[slot] = onCommand;
-        offCommands[slot] = offCommand;
+        this.onCommands[slot] = onCommand;
+        this.offCommands[slot] = offCommand;
     }
 
     public void onButtonWasPushed(int slot) {
-        onCommands[slot].execute();
-        undoCommand = onCommands[slot];
+        this.onCommands[slot].execute();
+        this.undoCommand = this.onCommands[slot];
     }
 
     public void offButtonWasPushed(int slot) {
-        offCommands[slot].execute();
-        undoCommand = offCommands[slot];
+        this.offCommands[slot].execute();
+        this.undoCommand = this.offCommands[slot];
     }
 
     public void undoButtonWasPushed() {
@@ -40,13 +40,19 @@ public class RemoteControl {
     }
 
     public String toString() {
-        StringBuffer stringBuff = new StringBuffer();
+        StringBuilder stringBuff = new StringBuilder();
         stringBuff.append("\n------ Remote Control -------\n");
-        for (int i = 0; i < onCommands.length; i++) {
-            stringBuff.append("[slot " + i + "] " + onCommands[i].getClass().getName()
-                    + "    " + offCommands[i].getClass().getName() + "\n");
+        for (int i = 0; i < this.onCommands.length; i++) {
+            stringBuff.append("[slot ").append(i).append("] ")
+                    .append(this.onCommands[i].getClass().getName())
+                    .append("    ")
+                    .append(this.offCommands[i].getClass().getName())
+                    .append("\n");
         }
-        stringBuff.append("[undo] " + undoCommand.getClass().getName() + "\n");
+        stringBuff.append("[undo] ")
+                .append(this.undoCommand.getClass().getName())
+                .append("\n");
         return stringBuff.toString();
     }
+
 }

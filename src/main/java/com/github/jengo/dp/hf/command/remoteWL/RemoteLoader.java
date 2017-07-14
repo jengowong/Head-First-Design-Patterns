@@ -3,8 +3,6 @@ package com.github.jengo.dp.hf.command.remoteWL;
 public class RemoteLoader {
 
     public static void main(String[] args) {
-        RemoteControl remoteControl = new RemoteControl();
-
         Light livingRoomLight = new Light("Living Room");
         Light kitchenLight = new Light("Kitchen");
         CeilingFan ceilingFan = new CeilingFan("Living Room");
@@ -21,6 +19,7 @@ public class RemoteLoader {
         //remoteControl.setCommand(3, stereoOnWithCD, stereo::off);
         //remoteControl.setCommand(4, garageDoor::up, garageDoor::down);
 
+        RemoteControl remoteControl = new RemoteControl();
         System.out.println(remoteControl);
 
         remoteControl.onButtonWasPushed(0);
@@ -35,4 +34,5 @@ public class RemoteLoader {
         remoteControl.offButtonWasPushed(4);
         remoteControl.onButtonWasPushed(5);
     }
+
 }

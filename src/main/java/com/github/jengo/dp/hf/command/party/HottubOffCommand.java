@@ -1,18 +1,21 @@
 package com.github.jengo.dp.hf.command.party;
 
 public class HottubOffCommand implements Command {
-    Hottub hottub;
+    private Hottub hottub;
 
     public HottubOffCommand(Hottub hottub) {
         this.hottub = hottub;
     }
 
+    @Override
     public void execute() {
-        hottub.setTemperature(98);
-        hottub.off();
+        this.hottub.setTemperature(98);
+        this.hottub.off();
     }
 
+    @Override
     public void undo() {
-        hottub.on();
+        this.hottub.on();
     }
+
 }

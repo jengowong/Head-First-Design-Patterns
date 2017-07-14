@@ -2,20 +2,20 @@ package com.github.jengo.dp.hf.command.undo;
 
 public class LightOffCommand implements Command {
 
-    Light light;
-    int level;
+    private Light light;
+    private int level;
 
     public LightOffCommand(Light light) {
         this.light = light;
     }
 
     public void execute() {
-        level = light.getLevel();
-        light.off();
+        this.level = this.light.getLevel();
+        this.light.off();
     }
 
     public void undo() {
-        light.dim(level);
+        this.light.dim(this.level);
     }
 
 }

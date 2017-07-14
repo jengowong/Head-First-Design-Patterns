@@ -1,17 +1,18 @@
 package com.github.jengo.dp.hf.command.party;
 
 public class StereoOnCommand implements Command {
-    Stereo stereo;
+    private Stereo stereo;
 
     public StereoOnCommand(Stereo stereo) {
         this.stereo = stereo;
     }
 
     public void execute() {
-        stereo.on();
+        this.stereo.on();
     }
 
     public void undo() {
-        stereo.off();
+        this.stereo.off();
     }
+
 }
