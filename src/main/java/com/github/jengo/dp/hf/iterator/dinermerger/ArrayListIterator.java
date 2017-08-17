@@ -1,10 +1,12 @@
 package com.github.jengo.dp.hf.iterator.dinermerger;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListIterator implements Iterator {
-    ArrayList<MenuItem> items;
-    int position = 0;
+
+    private List<MenuItem> items;
+    private int position = 0;
 
     public ArrayListIterator(ArrayList<MenuItem> items) {
         this.items = items;
@@ -23,4 +25,5 @@ public class ArrayListIterator implements Iterator {
             return true;
         }
     }
+
 }

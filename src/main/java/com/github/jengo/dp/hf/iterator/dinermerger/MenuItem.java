@@ -1,10 +1,11 @@
 package com.github.jengo.dp.hf.iterator.dinermerger;
 
 public class MenuItem {
-    String name;
-    String description;
-    boolean vegetarian;
-    double price;
+
+    private String name;
+    private String description;
+    private boolean vegetarian;
+    private double price;
 
     public MenuItem(String name,
                     String description,
@@ -35,4 +36,5 @@ public class MenuItem {
     public String toString() {
         return (name + ", $" + price + "\n   " + description);
     }
+
 }

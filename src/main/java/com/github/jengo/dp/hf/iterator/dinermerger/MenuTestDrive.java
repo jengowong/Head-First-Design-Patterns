@@ -3,6 +3,7 @@ package com.github.jengo.dp.hf.iterator.dinermerger;
 import java.util.ArrayList;
 
 public class MenuTestDrive {
+
     public static void main(String args[]) {
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         DinerMenu dinerMenu = new DinerMenu();
@@ -14,7 +15,6 @@ public class MenuTestDrive {
 
         // With iterators
         waitress.printMenu();
-
     }
 
     /*
@@ -56,4 +56,5 @@ public class MenuTestDrive {
             System.out.println("\t" + menuItem.getDescription());
         }
     }
+
 }

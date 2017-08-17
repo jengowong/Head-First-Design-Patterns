@@ -1,8 +1,9 @@
 package com.github.jengo.dp.hf.iterator.dinermerger;
 
 public class ArrayIterator implements Iterator {
-    MenuItem[] items;
-    int position = 0;
+
+    private MenuItem[] items;
+    private int position = 0;
 
     public ArrayIterator(MenuItem[] items) {
         this.items = items;
@@ -21,4 +22,5 @@ public class ArrayIterator implements Iterator {
             return true;
         }
     }
+
 }

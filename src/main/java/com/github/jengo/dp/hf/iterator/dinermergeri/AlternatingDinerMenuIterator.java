@@ -4,8 +4,8 @@ import java.util.Calendar;
 import java.util.Iterator;
 
 public class AlternatingDinerMenuIterator implements Iterator<Object> {
-    MenuItem[] items;
-    int position;
+    private MenuItem[] items;
+    private int position;
 
     public AlternatingDinerMenuIterator(MenuItem[] items) {
         this.items = items;
@@ -27,7 +27,7 @@ public class AlternatingDinerMenuIterator implements Iterator<Object> {
     }
 
     public void remove() {
-        throw new UnsupportedOperationException(
-                "Alternating Diner Menu Iterator does not support remove()");
+        throw new UnsupportedOperationException("Alternating Diner Menu Iterator does not support remove()");
     }
+
 }

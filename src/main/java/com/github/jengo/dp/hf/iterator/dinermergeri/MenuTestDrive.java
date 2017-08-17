@@ -1,6 +1,7 @@
 package com.github.jengo.dp.hf.iterator.dinermergeri;
 
 public class MenuTestDrive {
+
     public static void main(String args[]) {
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         DinerMenu dinerMenu = new DinerMenu();
@@ -22,6 +23,6 @@ public class MenuTestDrive {
         } else {
             System.out.println("No");
         }
-
     }
+
 }

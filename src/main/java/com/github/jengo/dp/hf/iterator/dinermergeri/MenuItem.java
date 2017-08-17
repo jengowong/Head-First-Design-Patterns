@@ -1,10 +1,10 @@
 package com.github.jengo.dp.hf.iterator.dinermergeri;
 
 public class MenuItem {
-    String name;
-    String description;
-    boolean vegetarian;
-    double price;
+    private String name;
+    private String description;
+    private boolean vegetarian;
+    private double price;
 
     public MenuItem(String name,
                     String description,
@@ -31,4 +31,5 @@ public class MenuItem {
     public boolean isVegetarian() {
         return vegetarian;
     }
+
 }

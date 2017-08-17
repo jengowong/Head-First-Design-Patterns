@@ -3,8 +3,9 @@ package com.github.jengo.dp.hf.iterator.dinermerger;
 import java.util.Calendar;
 
 public class AlternatingDinerMenuIterator implements Iterator {
-    MenuItem[] list;
-    int position;
+
+    private MenuItem[] list;
+    private int position;
 
     public AlternatingDinerMenuIterator(MenuItem[] list) {
         this.list = list;
@@ -28,4 +29,5 @@ public class AlternatingDinerMenuIterator implements Iterator {
     public String toString() {
         return "Alternating Diner Menu Iterator";
     }
+
 }

@@ -3,9 +3,10 @@ package com.github.jengo.dp.hf.iterator.dinermergercafe;
 import java.util.Iterator;
 
 public class Waitress {
-    Menu pancakeHouseMenu;
-    Menu dinerMenu;
-    Menu cafeMenu;
+
+    private Menu pancakeHouseMenu;
+    private Menu dinerMenu;
+    private Menu cafeMenu;
 
     public Waitress(Menu pancakeHouseMenu, Menu dinerMenu, Menu cafeMenu) {
         this.pancakeHouseMenu = pancakeHouseMenu;
@@ -58,7 +59,6 @@ public class Waitress {
         return false;
     }
 
-
     private void printVegetarianMenu(Iterator<MenuItem> iterator) {
         while (iterator.hasNext()) {
             MenuItem menuItem = iterator.next();
@@ -81,5 +81,5 @@ public class Waitress {
         }
         return false;
     }
-}
 
+}

@@ -4,8 +4,9 @@ import java.util.Calendar;
 import java.util.Iterator;
 
 public class AlternatingDinerMenuIterator implements Iterator<MenuItem> {
-    MenuItem[] items;
-    int position;
+
+    private MenuItem[] items;
+    private int position;
 
     public AlternatingDinerMenuIterator(MenuItem[] items) {
         this.items = items;
