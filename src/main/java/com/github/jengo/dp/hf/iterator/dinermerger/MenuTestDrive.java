@@ -1,6 +1,6 @@
 package com.github.jengo.dp.hf.iterator.dinermerger;
 
-import java.util.ArrayList;
+import java.util.List;
 
 public class MenuTestDrive {
 
@@ -24,7 +24,7 @@ public class MenuTestDrive {
         PancakeHouseMenu pancakeHouseMenu = new PancakeHouseMenu();
         DinerMenu dinerMenu = new DinerMenu();
 
-        ArrayList<MenuItem> breakfastItems = pancakeHouseMenu.getMenuItems();
+        List<MenuItem> breakfastItems = pancakeHouseMenu.getMenuItems();
         MenuItem[] lunchItems = dinerMenu.getMenuItems();
 
         // Hiding implementation
